@@ -18,5 +18,6 @@ Você precisa ter instalado algum editor de código-fonte, como o Visual Studio 
 
 ## 🎁 Crédito
 
+* Agradecimento a Deus
 * Todas as pessoas da Comp Júnior que me ajudaram nesse processo
 * Matheus Battisti - Hora de Codar
