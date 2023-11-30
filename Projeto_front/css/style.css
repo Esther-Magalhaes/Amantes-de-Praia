@@ -15,16 +15,16 @@
 
 
 
-
 /* Navbar e página inicial */
 
 .comeco {
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .img-principal {
-    position: fixed; 
+    position: absolute; 
     width: 65%;
     height: 100%;
     background-image: url(../img/praia-principal.jpg);
@@ -468,9 +468,9 @@
     font-size: 30px;
     display: inline-block;
     text-align: right;
-    position: relative;
-    left: 1090px;
-    bottom: 140px;
+    position: absolute;
+    right: 15px;
+    bottom: -5px;
 }
 
 #msg-1 {
@@ -485,10 +485,47 @@
     margin-top: 5px;
 }
 
+/* Quando a largura da tela for pelo menos 100px */
+@media screen and (min-width: 100px) {
+    .conteudo-esquerda h1 {
+        font-size: 65px;
+        text-align: center;
+    }
+}
 
+/* Quando a largura da tela for no máximo 1060px */
+@media screen and (max-width: 1060px) {
+    /* Diminui as frases da página principal */
+    .conteudo-esquerda h1 {
+        font-size: 50px;
+        position: relative;
+        left: -20px;
+    }
 
+    /* Diminui as frases da página principal */
+    .conteudo-mensagem h1 {
+        font-size: 45px;
+    }
 
-
+    /* Diminui o botão de "crie sua conta" */
+    .inscrever-btn {
+        font-size: 12px;
+        right: 20px;
+    }
+    /* Diminui a imagem do card  */
+    .conteudo .praia-imagem {
+        height: 200px;
+    }
+    /* Diminui o tamanho do card */
+    .conteudo .card {
+        height: 100px;
+        padding-bottom: 350px; 
+    }
+    /* Diminui o tamanho do adesivo do card */
+    #conteudo-direita:before, #conteudo-direita:after {
+        width: 140px;
+    }
+}
 
 
 
@@ -525,6 +562,7 @@
     position: relative;
     background-color: #fff;
     padding: 50px;
+    overflow-x: hidden;
 }
 
 .titulo-apresentacao {
@@ -713,7 +751,31 @@
 }
 
 
+/* Quando a largura da tela for pelo menos 100px */
+@media screen and (min-width: 100px) {
 
+    /* Posição normal da descrição e imagem do surfista */
+
+    #img-parte-2 {
+        left: 25px;
+    }
+
+    #descricao-2 {
+        margin-left: 475px;
+    }
+}
+
+/* Quando a largura da tela for no máximo 1060px */
+@media screen and (max-width: 1060px) {
+    /* Estamos movendo a descrição e imagem do surfista para a esquerda, conforma vamos diminuindo a tela */
+    #img-parte-2 {
+        left: 2px;
+    }
+
+    #descricao-2 {
+        margin-left: 45px;
+    }
+}
 
 
 
@@ -762,7 +824,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1vw;
-    padding: 0 2vw;
+    padding: 0 9vw;
 }
 #alga {
     width: 2px;
@@ -780,7 +842,7 @@
     padding: 19px 19px 400px 19px; 
     box-shadow: 15px 15px 20px rgb(0, 0, 0, 0.45); 
     transition: 0.4s;
-    margin:10px;
+    margin: 10px;
 }
 
 .card ._{
@@ -817,22 +879,31 @@
     padding-top: -2px; 
 }
 
-@media screen and (max-width: 1024px){
-    .card{
-        width: calc(33.3vw - 20px);
+/* Largura máxima de 1024 px */
+@media screen and (max-width: 1024px) {
+    /* Redimensiona o card quando a largura da tela é no máximo 1024 px*/
+    .card {
+        width: calc(33.3vw - 20px); 
+        padding-bottom: 500px; 
     }
-    .direction{
-        display: none;
+    
+    .direction {
+        display: none; 
     }
 }
-@media screen and (max-width: 768px){
-    .card{
+
+/* Largura máxima de 768 px */
+@media screen and (max-width: 768px) {
+    /* Redimensiona os cards conforme a tela vai ficando pequena */
+    .card {
         width: calc(50vw - 20px);
     }
-    .direction{
-        display: none;
+   
+    .direction {
+        display: none; 
     }
 }
+
 
 #img-card-1 {
     background-image: url('../img/praia01.jpg')
@@ -909,7 +980,7 @@ footer .wave {
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(../img/wave.png);
+    background: url(../img/wave.png);  
     background-size: 1000px 100px;
 }
 
@@ -1018,7 +1089,19 @@ footer p {
 }
 
 
+#alga {
+    position: absolute;
+    width: 100px;
+    top: 75px;
+    left: 210px;
+}
 
+#alga2 {
+    position: absolute;
+    width: 55px;
+    top: 95px;
+    right: 260px;
+}
 
 
 
