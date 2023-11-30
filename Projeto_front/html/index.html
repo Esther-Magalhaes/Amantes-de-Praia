@@ -26,10 +26,11 @@
                     <li><a href="../html/pag-login.html" class="login-btn">Faça login</a></li>
 
                     <li>
-                            
+                        <!-- Container para a API de previsão do tempo -->
                         <div class="envolve-container">
                             <div class="container_api"> 
-                                <div class="form">  <!-- formulário para pesquisa -->
+                                <!-- formulário para pesquisa -->
+                                <div class="form">  
                                     <div class="form-input-container">
                                         <input type="text" placeholder="Digite o nome de uma cidade" id="city-input">
                                         <button id="search">
@@ -39,8 +40,8 @@
                                 </div>
                         
                         
-                        
-                                <div id="weather-data" class="hide">  <!-- dados da previsão do tempo -->
+                                <!-- Dados da previsão do tempo -->
+                                <div id="weather-data" class="hide"> 
                                     <h2>
                                         <i class="icone"><img src="../img/icons/localizacao.png" alt="ícone de localização"></i>
                                         <span id="city"></span>  <!-- Nome da cidade -->
@@ -65,11 +66,12 @@
                                 </div>
                         
                         
-                        
+                                <!-- Mensagem de erro para a API -->
                                 <div id="error-message" class="hide">
                                     <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
                                 </div>
                                 
+                                <!-- Spinner de carregamento -->
                                 <div id="loader" class="hide">
                                     <i class="icone" id="icon-spinner"><img src="../img/icons/spinner.png" alt="ícone do spinner de carregamento"></i>
                                 </div>
@@ -82,12 +84,14 @@
 
                 </ul>  
                 
-                
+                <!-- Mini Barra -->
+                <!-- Quando a tela é minimizada, a navbar desaparece, e no lugar aparece essa mini barra para substituí-la -->
                 <div class="btn-barra">
                     <i class="barra"><img src="../img/icons/barra.png" id="barra-icone" alt="Ícone de mini barra"></i>
                 </div>
             </div>
 
+            <!-- Barra de navegação em telas menores -->
             <div class="barra-caixinha">
                 <li><a href="#" class="navbar-btn">Quem somos?</a></li>
                 <li><a href="#" class="navbar-btn">Projetos</a></li>
@@ -101,31 +105,37 @@
         const barraBtn = document.querySelector('.btn-barra');
         const barraBtnIcon = document.querySelector('.btn-barra i');
         const barraCaixinha = document.querySelector('.barra-caixinha');
-    
+        
+        /* Quando a tela é minimizada, a navbar desaparece, e no lugar aparece essa mini barra para substituí-la */
+        /* Quando o botão de mini barra é pressionado, o menu aparece */
         barraBtn.onclick = function () {
             barraCaixinha.classList.toggle('open');
             const isOpen = barraCaixinha.classList.contains('open');
         };
     </script>
 
-
+    <!-- Conteúdo principal da página -->
     <div class="conteudo">
             <div class="conteudo-esquerda">
                 <div class="">
                     <h1 class="conteudo-titulo">Gosta de praia?<br><h1 class="conteudo-titulo" id="conteudo-titulo-abaixo">aqui é o lugar</h1></h1>
                 </div>
 
+                <!-- Botão para criar conta -->
                 <div class="btn">
                     <a href="../html/pag-login.html" class="inscrever-btn" id="crie-sua-conta"><span>Crie sua conta</span></a>
                 </div>
             </div>
             
+            <!-- Card de destaque sobre a Praia de Copacabana -->
             <div class="card" id="conteudo-direita">
                 <div class="praia-imagem" id="img-card-1" alt="Foto da praia de Copacabana"></div>
                 <h2 class="nome-praia">Praia de Copacabana, Brasil</h2>
                 <p class="praia-descricao">A praia é bonita e cheia de vida, além de ter ótimos quiosques</p>
             </div>
         </div>
+
+        <!-- Mensagem de chamada para postar experiências -->
         <div class="conteudo-mensagem">
             <h1 id="msg-1">poste</h1>
             <h1 id="msg-2">sua</h1>
@@ -162,6 +172,7 @@
             <h1>escolha uma praia</h1>
         </div>
         
+        <!-- Opções para escolher uma praia do gosto da pessoa -->
         <div class="parte">
             <ul>
                 <li><img src="../img/curtir.jpeg" id="img-parte-1" alt="Pessoas em um bar"></li>
@@ -222,6 +233,7 @@
 
         <div id="container">
 
+                    <!-- Cards com postagens da comunidade -->
                     <div class="card">
                         <div class="praia-imagem" id="img-card-1" alt="Praia de Copacabana"></div>
                         <h2 class="nome-praia">Praia de Copacabana, Brasil</h2>
