@@ -12,7 +12,7 @@ Você precisa ter instalado algum editor de código-fonte, como o Visual Studio 
 ## Front-end
 
 
-## Infraj
+## Infra
 
 
 
