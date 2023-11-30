@@ -5,9 +5,8 @@ Foi utilizado as linguagens HTML, CSS e Javascript.
 Trilha Principal: Front-end (construção do site)
 Trilha Secundária: Infra (deploy do site)
 
-```
 ### 📋 Pré-requisitos
-```
+
 Você precisa ter instalado algum editor de código-fonte, como o Visual Studio Code.
 
 ## Front-end
