@@ -10,7 +10,7 @@ Foi utilizado as linguagens HTML, CSS e Javascript.
 
 ## Infra
 
-Neste projeto, é feito o deploy — na tradução livre “implantação” - de um software, no caso o meu próprio site, chamado "Amantes de Praia".
+Neste projeto, é feito o deploy — na tradução livre “implantação” — de um software, no caso o meu próprio site, chamado "Amantes de Praia".
 
 
 ## 🎁 Créditos
