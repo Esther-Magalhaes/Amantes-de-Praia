@@ -27,7 +27,7 @@
     position: absolute; 
     width: 65%;
     height: 100%;
-    background-image: url(../img/praia-principal.jpg);
+    background-image: url(./img/praia-principal.jpg);
     z-index: -1; 
     background-repeat: no-repeat;
     background-size: cover; 
@@ -906,27 +906,27 @@
 
 
 #img-card-1 {
-    background-image: url('../img/praia01.jpg')
+    background-image: url('./img/praia01.jpg')
 }
 
 #img-card-2 {
-    background-image: url('../img/praia02.jpeg')
+    background-image: url('./img/praia02.jpeg')
 }
 
 #img-card-3 {
-    background-image: url('../img/praia03.jpg')
+    background-image: url('./img/praia03.jpg')
 }
 
 #img-card-4 {
-    background-image: url('../img/praia04.jpg')
+    background-image: url('./img/praia04.jpg')
 }
 
 #img-card-5 {
-    background-image: url('../img/praia05.jpg')
+    background-image: url('./img/praia05.jpg')
 }
 
 #img-card-6 {
-    background-image: url('../img/praia06.jpg')
+    background-image: url('./img/praia06.jpg')
 }
 
 
@@ -980,7 +980,7 @@ footer .wave {
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(../img/wave.png);  
+    background: url(./img/wave.png);  
     background-size: 1000px 100px;
 }
 
@@ -1137,7 +1137,7 @@ footer p {
     align-items: center;
     justify-content: center;
     z-index: 10;
-    background-image: url(../img/praia-login.jpg);
+    background-image: url(./img/praia-login.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
